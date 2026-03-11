@@ -1,3 +1,5 @@
+<!-- Arquivo de seleção do tipo de cadastro: Paciente ou -->
+
 <?php
 session_start();
 
@@ -23,16 +25,20 @@ if (isset($_POST['nivel']) && $_POST['nivel'] == 'medico') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/svg+xml" href="https://i.postimg.cc/xkk98Qgh/Med-Pass-Icon.png" alt="Med-Pass-Icon" />
+    <title>MedPass- Cadastro</title>
 </head>
 <body>
-    <div class="container-1">
-        <h1>Fazer cadastro como:</h1>
-        <form method="POST">
-            <button class="btn" type="submit" name="nivel" value="paciente">Paciente</button>
-            <button class="btn" type="submit" name="nivel" value="medico">Médico</button>
-        </form>   
-    </div>
+    <main>
+        <div class="container-1">
+            <img src="https://i.postimg.cc/VSSzvwD8/Med-Pass-Logo-(resolucao-maior).png" alt="Logo MedPass">
+            <h1>Olá! Escolha seu tipo de cadastro</h1>
+            <form action="POST">
+                <button class="btn" type="submit" name="nivel" value="paciente">Cadastro de paciente</button>
+                <button class="btn" type="submit" name="nivel" value="medico">Cadastro de médico</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
 

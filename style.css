@@ -1,42 +1,175 @@
-body{
+/* import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap');
+
+/* Elementos globais */
+* {
+    font-family: "Aleo", serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../med-pass-main/imgs/fundo.svg') no-repeat center center/cover;
+    /* centralizar o .container */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1000px;
 }
 
-form{
-    display:grid ;
-}
-.container-1{
-    display:grid ;
-    width: 350px;
-    height: 500px;
-    align-items:center ;
-    justify-content: center;
-
-}
-
-.input{
-    width: 100%;
-}
-label{
+.container-1 {
+    position: relative; /* Permite elemento filho em posição absoluta */
+    /* centraliza o conteúdo */
     display: flex;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 50px;
+    min-height: 70vh;
+    width: 65%;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.btn{
-    background-color: black;
-    border-radius: 20px;
-    margin-top: 55px;
-    color: white;
+form {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007977;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 999px;
+    width: 50%;
+    height: 60px;
+    font-size: x-large;
+    transition: background-color 0.3s ease;
+}
+
+.btn:visited {
+    color: #FFF;
+}
+
+.btn:hover {
+    background-color: #095a59;
+    cursor: pointer;
+}
+
+.ajuda {
+  color: #007977;
+  text-decoration: none;
+}
+
+.ajuda:visited {
+  color: #0c9492;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+strong {
+    color: #0F6664;
+    font-size: large;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.btnEntrar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007977;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 999px;
+    width: 30%;
+    height: 60px;
+    font-size: x-large;
+    transition: background-color 0.3s ease;
+}
+
+.botaoVoltar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: #007977;
+    font-weight: bold;
+    background: rgba(255,255,255,0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btnEntrar:hover {
+    background-color: #095a59;
+    cursor: pointer;
+}
+
+/* css da parte do cadastro de paciente e médico */
+
+.form-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* duas colunas iguais */
+    gap: 20px 30px;                   /* espaçamento entre colunas e linhas */
+    align-items: start; 
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;                        /* espaço entre cada label‑input */
+}
+
+.coluna input,
+.coluna select {
+    width: 100%;                      /* ocupam toda a largura da coluna */
 }
 
 select {
-    width: 100%;
+    width: 50%;
+    height: 50px;
     padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: large;
+}
+
+form p {
+    text-align: center;
 }
