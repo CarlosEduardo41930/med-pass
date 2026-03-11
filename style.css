@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+}
+
+form{
+    display:grid ;
+}
+.container-1{
+    display:grid ;
+    width: 350px;
+    height: 500px;
+    align-items:center ;
+    justify-content: center;
+
+}
+
+.input{
+    width: 100%;
+}
+label{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.btn{
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 55px;
+    color: white;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
