@@ -115,8 +115,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </label>
                 <select name="genero" required>
                     <option value="">Selecione seu gênero</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
+                    <option value="m">Masculino</option>
+                    <option value="f">Feminino</option>
+                    <option value="i">Outro</option>
                 </select>
 
                 <button class="btn" type="submit">Cadastrar</button>
@@ -124,5 +125,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 </body>
 </html>
-
 
