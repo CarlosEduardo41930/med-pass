@@ -20,7 +20,7 @@ if (isset($_POST['nivel']) && $_POST['nivel'] == 'medico') {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +31,8 @@ if (isset($_POST['nivel']) && $_POST['nivel'] == 'medico') {
 <body>
     <main>
         <div class="container-1">
+            <a href="index.php" class="botaoVoltar">&larr; Voltar</a> <!-- Voltar pra tela de login -->
+
             <img src="https://i.postimg.cc/VSSzvwD8/Med-Pass-Logo-(resolucao-maior).png" alt="Logo MedPass">
             <h1>Olá! Escolha seu tipo de cadastro</h1>
             <form action="POST">

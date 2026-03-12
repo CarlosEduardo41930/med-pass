@@ -49,25 +49,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="https://i.postimg.cc/xkk98Qgh/Med-Pass-Icon.png" alt="Med-Pass-Icon" />
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
         <div class="container-1">
-            <form method="POST">
-                <label>
-                    CPF
-                </label>
-                <input name="cpf" type="text" required placeholder="Digite seu cpf aqui!">
-                
-                <label>
-                    Senha
-                </label>
-                <input name="senha" type="password" required placeholder="Digite sua senha aqui">
-                <a href="btn_cadastro.php">Não possui cadastro? Fazer Cadastro!</a>
-                <button class="btn" type="submit">Entrar</button>
+            <img src="https://i.postimg.cc/VSSzvwD8/Med-Pass-Logo-(resolucao-maior).png" alt="Logo MedPass"></img>
+            <h1>MedPass- Login</h1>
+            <form method="post">
+                <label for="cpf">CPF</label>
+                <input type="number" placeholder="Digite seu CPF aqui" required> <!-- Troquei os campos cpf de todos os arquivos de text pra number pro cara nao conseguir colocar letra no campo (se precisar troca de volta pra text) -->
+
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Digite aqui sua senha" required>
+
+                <p>Não possui cadastro? <a href="btn_cadastro.php" class="ajuda"><strong>Fazer cadastro</strong></a></p>
+                <p>Precisa de ajuda? <a href="#" class="ajuda"><strong>Clique aqui</strong></a></p>
+
+                <button type="submit" class="btn">Entrar</button>
             </form>
         </div>
+    </main>
 </body>
 </html>
 

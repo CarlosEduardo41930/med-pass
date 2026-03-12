@@ -17,7 +17,7 @@ body {
 main {
     width: 100%;
     min-height: 100vh;
-    background: url('../med-pass-main/imgs/fundo.svg') no-repeat center center/cover;
+    background: url('imgs/fundo.svg') no-repeat center center/cover;
     /* centralizar o .container */
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@ form {
     text-decoration: none;
     text-align: center;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 999px;
     width: 50%;
     height: 60px;
@@ -172,4 +172,5 @@ select {
 
 form p {
     text-align: center;
+    margin-bottom: 10px;
 }
