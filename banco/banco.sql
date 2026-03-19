@@ -50,13 +50,13 @@ CREATE TABLE arquivos(
 CREATE TABLE medicamento_em_uso (
     id_medicamento int not null PRIMARY KEY auto_increment,
     nome VARCHAR (100) not null,
-    dosagem FLOAT not null,
-    frequencia INTEGER not null,
+    dosagem VARCHAR (20) not null,
+    frequencia VARCHAR (20) not null, 
     data_inicio DATE not null,
     data_fim DATE null,
     observacao VARCHAR (50) null,
-    fk_medico_id INT,
-    fk_paciente_id INT
+    fk_medico_id INT not null,
+    fk_paciente_id INT not null
 );
 
 ALTER TABLE arquivos
